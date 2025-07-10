@@ -11,7 +11,7 @@ public class FrameLabels {
         // initialization of frame
         JFrame frame = new JFrame(); // initializes frame object
         // setting frame properties
-        frame.setSize(1920, 1080); // sets size of frame
+        frame.setSize(1000, 1000); // sets size of frame
         frame.setResizable(false); // make it so frame cant be resized
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // makes the x button exit the window instead of hiding it
 
