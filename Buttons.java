@@ -22,8 +22,13 @@ public class Buttons extends JFrame implements ActionListener { // Define the Bu
 
 		button = new JButton(); // Create a new JButton and assign it to button
 		button.setBounds(100, 100, 250, 100); // Set the position and size of the button
-		button.addActionListener(this); // Add this class as the ActionListener for the button
+        
 		button.setText("I'm a button!"); // Set the text of the button
+		button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Button was clicked!");
+            }
+        });
 
 		button.setFocusable(false); // Make the button not focusable (removes the focus border)
 		button.setFont(new Font("Comic Sans", Font.BOLD, 25)); // Set the font of the button text
@@ -36,14 +41,5 @@ public class Buttons extends JFrame implements ActionListener { // Define the Bu
 		frame.setVisible(true); // Make the frame visible
 		frame.add(button); // Add the button to the frame
 		frame.add(label); // Add the label to the frame
-	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) { // Method called when an action event occurs
-		if (e.getSource() == button) { // Check if the event source is the button
-			System.out.println("printed"); // Print "printed" to the console
-			button.setEnabled(false); // Disable the button so it can't be clicked again
-			label.setVisible(true); // Make the label visible
-		}
 	}
 }

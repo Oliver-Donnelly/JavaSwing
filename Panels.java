@@ -33,7 +33,7 @@ public class Panels {
 
 		JPanel greenPanel = new JPanel(); // Create a new JPanel for the green panel
 		greenPanel.setBackground(Color.green); // Set the background color of the green panel to green
-		greenPanel.setBounds(0, 250, 500, 250); // Set the position and size of the green panel
+		greenPanel.setBounds(0, 25, 500, 250); // Set the position and size of the green panel
 		// greenPanel.setLayout(new BorderLayout()); // Set the layout manager of the green panel to BorderLayout
 
 		JFrame frame = new JFrame(); // Create a new JFrame (main window)
